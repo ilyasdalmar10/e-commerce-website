@@ -1,0 +1,147 @@
+/* The styles of the header in the homepage */
+
+.home-page-header-container{
+  display: grid;
+  gap: 5px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  font-family: Raleway;
+
+}
+
+.home-page-header-container div{
+  text-align: center;
+  padding: 10px;
+}
+
+/*The styles for the left section of the header*/
+.home-header-left-section{
+  grid-area: 1/1/3/4;
+  max-width:220px;
+
+}
+
+.home-header-left-section-location img{
+  width: 35px;
+  height: 35px;
+  object-fit:inherit;
+  image-rendering: pixelated;
+  mix-blend-mode: multiply;
+  image-rendering: -webkit-optimize-contrast;
+  cursor: pointer;
+  margin-right: 5px;
+}
+#location-home,#sign-in,#view-cart,.home-header-left-section-customer-service label{
+  cursor: pointer;
+}
+.home-header-left-section-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+ 
+}
+.home-header-left-section-customer-service {
+  transform: translateX(15px);
+}
+
+
+
+/*The styles for the middle section of the header*/
+.home-header-middle-section {
+  grid-area: 1/4/7/10;  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto,auto);
+  max-width: 890px;
+}
+
+
+/* The styles for the image of the logo*/
+.home-header-middle-section-logo img{
+  width: auto;
+  height: auto;
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
+/*The styles for the middle section search bar */
+.home-header-middle-section-search{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.home-header-middle-section-search input{
+  font-size: 14px;
+  transition: 5s;
+  border:none;
+  border-bottom: 2px solid #000204;
+  height: 25px;
+  border-radius: 6px; 
+}
+
+.home-header-middle-section-search input:active{
+  width: 450px;
+}
+.home-header-middle-section-search input.expanded{
+  width: 450px;
+
+}
+.home-header-middle-section-search img{
+  width: 25px;
+  height: 25px;
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+  
+}
+.home-header-middle-section-search button{
+  height: 30px;
+  border-radius: 8px;
+  border: 2px solid #000204;
+  cursor: pointer;
+}
+/* The styles for the categories */
+.home-header-middle-section-categories ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+
+
+/*The styles for the right section of the header*/
+.home-header-right-section{
+  grid-area: 1/10/3/13;
+  max-width: 220px;
+}
+.home-header-right-section-login ,.home-header-right-section-basket{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.home-header-right-section-login img,
+.home-header-right-section-basket img{
+  width: 30px;
+  height: 30px;
+  object-fit:inherit;
+  image-rendering: -webkit-optimize-contrast;
+  mix-blend-mode: multiply;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.home-header-right-section-login img{
+  transform: translateX(-10px);
+  
+}
+.basket-num{
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(206, 8, 8);
+  cursor: pointer;
+}
