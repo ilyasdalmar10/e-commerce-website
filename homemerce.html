@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- The links to the css of this page-->
   <!--These are font links from google fonts-->
-  <link rel="stylesheet" href="styles/ap-header.css">
+  <link rel="stylesheet" href="styles/ap-header/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <!--The different sections of the header element.-->
     <div class="home-header-left-section">
       <div class="home-header-left-section-location">
-        <img src="images/icons/location-icon.PNG"> 
+        <img src="images/icons/location-icon.PNG" alt="location deliver to you"> 
         <label id="location-home">Deliver to your home</label>
       </div>
       <div class="home-header-left-section-customer-service">
@@ -29,12 +29,12 @@
     <div class="home-header-middle-section">
           <!--The containers for the image of the logo and the search bar and the caetgories.-->
           <div class="home-header-middle-section-logo">
-            <img src="images/logo.PNG">
+            <img src="images/logo.PNG" alt="big logo">
           </div>
 
           <div class="home-header-middle-section-search">
             <input type="text" placeholder="Search Dalmar&Sons">
-            <button><img src="images/icons/search-icon.PNG"></button>
+            <button><img src="images/icons/search-icon.PNG" alt="searching button"></button>
           </div>
               
           <div class="home-header-middle-section-categories"> 
@@ -45,28 +45,79 @@
               <li>Books</li>
               <li>Electronics</li>
               <li>Gifts</li>
-              <li>Video Games</li>
-              
+              <li>Video Games</li>            
             </ul> 
           </div>
     </div>
-
     <div class="home-header-right-section">
             <div class="home-header-right-section-login">
-                <a><img src="images/icons/sign-in-icon.PNG"></a><a><label id="sign-in">Sign in</label></a> 
-            </div>
-            
+                <a><img src="images/icons/sign-in-icon.PNG" alt="sign in"></a><a><label id="sign-in">Sign in</label></a> 
+            </div>          
             <div class="home-header-right-section-basket">
                 <div class="basket-num">3</div><img src="images/icons/basket-icon.PNG"><label id="view-cart">View Cart</label>
             </div>
-    </div>
-    
+    </div>  
   </header>   
 
 
+  <!-- The main body of the home page  -->
+  <!-- The view-count -->
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--The footer containing the two list and logo-->
+  <footer class="footer-container">
+    <div class="footer-left-list">    
+      <ul>
+        <label>Shop</label>
+        <li>Men's Clothes</li>
+        <li>Women's Clothes</li>
+        <li>Home accessories</li>
+        <li>Books</li>
+        <li>Electronics</li>
+        <li>Gifts</li>
+        <li>Video Games</li>
+      </ul>
+    </div>
+    <div class="footer-middle-mini-logo">
+      <div>
+        D&S
+      </div>
+      <p>The content of this site is copyright-protected and is the property of D&S Dalmar & Sons.</p>
+    </div>
+    <div class="footer-right-contacts">
+        <ul>
+          <li><img src="images/icons/socialmedia/instagram-icon.PNG">Follow</li>
+          <li><img src="images/icons/socialmedia/mail-icon.PNG">Support</li>
+          <li><img src="images/icons/socialmedia/facebook-icon.PNG">Promote</li>
+          <li><img src="images/icons/socialmedia/x-icon.PNG">Cultivate</li>
+          <li><img src="images/icons/socialmedia/pinterest-icon.PNG">Nurture</li>
+                   
+        </ul>
+    </div>
+    
+  </footer>
+
+
+
 </body>
 <script>
     let increaseinput = document.querySelector('.home-header-middle-section-search input');
