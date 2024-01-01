@@ -1,0 +1,17 @@
+/* View-Count Styles */
+.view-count-container{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(226, 47, 83, 0.616);
+
+}
+.view-count-heading{
+  text-align: center;
+  width: 100%;
+}
+.view-count-heading-timer{
+  width: 100%;
+  text-align: center;
+}

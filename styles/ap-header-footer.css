@@ -155,7 +155,9 @@
   font-family: Raleway;
   position: absolute;
   bottom: 0;
-  width: 99%;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
