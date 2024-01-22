@@ -1,0 +1,31 @@
+/* The styles for the main body */
+
+/* View-Count Styles */
+.view-count-container{
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  right: 0;
+  background-color: rgba(226, 47, 83, 0.616);
+  height: 500px;
+  
+}
+.view-count-heading{
+  justify-content: center;
+  display: flex;
+}
+#view-count-heading h1, .view-count-heading-timer{
+  display: inline-block;
+  text-align: center;
+}
+
+/*Styles for the product container in thr view count */
+.view-count-product-container{
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  background-color: rgba(65, 197, 197, 0.349);
+  
+  
+}
