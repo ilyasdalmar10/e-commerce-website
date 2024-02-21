@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- The links to the css of this page-->
-  <link rel="stylesheet" href="styles/ap-header-footer.css">
-  <link rel="stylesheet" href="styles/mainbody.css">
-  
+  <link rel="stylesheet" href="styles/shared/ap-header-footer.css">
+  <link rel="stylesheet" href="styles/pages/dalmarSons.css">
+  <link rel="stylesheet" href="styles/shared/general.css">
   
   <!--These are font links from google fonts-->  
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
               
           <div class="home-header-middle-section-categories"> 
             <ul>
-              <li>Men's Clothes</li>
+              <a><li>Men's Clothes</li></a>
               <li>Women's Clothes</li>
               <li>Home accessories</li>
               <li>Books</li>
@@ -66,43 +66,15 @@
   </header>   
 
 
-  <!-- The main body of the home page  -->
-  <section class="main-body">
-  <!-- The view-count -->
-  
-  <div class="view-count-container">
-
-    <div class="view-count-heading">
-      View - Count 
-    </div>
-    <div class="view-count-heading-timer">9:00</div>
-    <div class="view-count-product-container">
-      <div class="view-count-product">
-        
-      </div>
-
-    </div>
+    <div class="products-grid js-products-grid" >
     
-  </div>
 
+    </div>
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </section>
   <!--The footer containing the two list and logo-->
   <footer class="footer-container">
     <div class="footer-left-list">    
@@ -139,13 +111,7 @@
 
 
 </body>
-<script type="module" src="data/products.js"></script>
-<script>
-    let increaseinput = document.querySelector('.home-header-middle-section-search input');
-    increaseinput.addEventListener('mousedown', ()=>{
-      increaseinput.classList.toggle('expanded');
-      
-    });
 
- </script> 
+<script type="module" src="scripts/dalmarSons.js"></script>
+
 </html>

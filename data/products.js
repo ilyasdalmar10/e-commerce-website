@@ -1,17 +1,18 @@
 export const products = [
   {
-      id: "w37d84f5-8a62-4b72-a4a8-ee0d8e83c1f9",
-      name: "Floral Maxi Dress",
+      id: 'w37d84f5-8a62-4b72-a4a8-ee0d8e83c1f9',
+      name: 'Floral Maxi Dress',
       description: "Embrace elegance with this floral maxi dress. Featuring a modest design with a flowy silhouette, it's perfect for both casual outings and special occasions.",
-      image: "images/products/floral-maxi-dress.jpg",
+      image: 'images/products/floral-maxi-dress.jpg',
       rating: {
-          stars: 4.2,
+          stars: 4.5,
           count: 752
       },
+      pricePennies : 2500,
       keywords: [
-          "Floral",
-          "Maxi Dress",
-          "Modest Fashion"
+          'Floral',
+          'Maxi Dress',
+          'Modest Fashion' 
       ]
   },
   {
@@ -20,9 +21,10 @@ export const products = [
       description: "Elevate your wardrobe with this classic Oxford shirt. Tailored for a comfortable fit and designed with timeless style, it's a versatile piece for any occasion.",
       image: "images/products/classic-oxford-shirt.jpg",
       rating: {
-          stars: 3.8,
+          stars: 3.0,
           count: 932
       },
+      pricePennies : 1999,
       keywords: [
           "Oxford Shirt",
           "Classic",
@@ -38,6 +40,7 @@ export const products = [
           stars: 4.5,
           count: 1205
       },
+      pricePennies : 1250,
       keywords: [
           "Ceramic",
           "Flower Vase",
@@ -53,6 +56,7 @@ export const products = [
           stars: 4.0,
           count: 586
       },
+      pricePennies : 12500,
       keywords: [
           "Retro",
           "Gaming Console",
@@ -65,9 +69,10 @@ export const products = [
       description: "Create lasting memories with this personalized photo frame. Add your favorite picture and customize it with a special message for a truly heartfelt gift.",
       image: "images/products/personalized-photo-frame.jpg",
       rating: {
-          stars: 4.7,
+          stars: 2.5,
           count: 1023
       },
+      pricePennies : 2999,
       keywords: [
           "Personalized",
           "Photo Frame",
@@ -80,9 +85,10 @@ export const products = [
     description: "Create a calming atmosphere in your home with this aromatherapy diffuser. Its sleek design and soothing mist make it ideal for relaxation and stress relief.",
     image: "images/products/aromatherapy-diffuser.jpg",
     rating: {
-        stars: 4.3,
+        stars: 3.0,
         count: 1100
     },
+    pricePennies : 3450,
     keywords: [
         "Aromatherapy",
         "Diffuser",
@@ -95,9 +101,10 @@ export const products = [
     description: "Immerse yourself in virtual worlds with this virtual reality headset. Featuring high-resolution displays and ergonomic design, it's perfect for gaming, movies, and more.",
     image: "images/products/virtual-reality-headset.jpg",
     rating: {
-        stars: 4.8,
+        stars: 4.5,
         count: 850
     },
+    pricePennies : 45000,
     keywords: [
         "Virtual Reality",
         "Headset",
@@ -110,9 +117,10 @@ export const products = [
     description: "Make a statement with this personalized leather wallet. Crafted from premium materials and customizable with initials, it's a thoughtful gift for any occasion.",
     image: "images/products/personalized-leather-wallet.jpg",
     rating: {
-        stars: 4.6,
+        stars: 1.5,
         count: 975
     },
+    pricePennies : 1500,
     keywords: [
         "Personalized",
         "Leather Wallet",
@@ -125,9 +133,10 @@ export const products = [
     description: "Simplify your charging experience with this wireless charging pad. Compatible with a wide range of devices, it's perfect for keeping your gadgets powered up without the hassle of cables.",
     image: "images/products/wireless-charging-pad.jpg",
     rating: {
-        stars: 4.4,
+        stars: 1.0,
         count: 1200
     },
+    pricePennies : 6000,
     keywords: [
         "Wireless Charging",
         "Charging Pad",
@@ -142,6 +151,7 @@ export const products = [
       stars: 4.5,
       count: 1300
   },
+  pricePennies : 999,
   keywords: [
       "The Great Gatsby",
       "F. Scott Fitzgerald",
@@ -154,9 +164,10 @@ export const products = [
   description: "Step out in style with this A-line midi skirt. Its flattering silhouette and versatile design make it a wardrobe essential for any fashion-forward individual.",
   image: "images/products/a-line-midi-skirt.jpg",
   rating: {
-      stars: 4.1,
+      stars: 2.5,
       count: 880
   },
+  pricePennies : 2300,
   keywords: [
       "A-Line Midi Skirt",
       "Modest Fashion",
@@ -169,9 +180,10 @@ export const products = [
   description: "Stay cozy and stylish with this cable knit sweater. Featuring a classic design and soft fabric, it's perfect for layering during the colder months.",
   image: "images/products/cable-knit-sweater.jpg",
   rating: {
-      stars: 4.3,
+      stars: 1.5,
       count: 970
   },
+  pricePennies : 1100,
   keywords: [
       "Cable Knit Sweater",
       "Men's Fashion",
@@ -184,9 +196,10 @@ export const products = [
   description: "Bring the beauty of nature indoors with this succulent plant set. Easy to care for and visually striking, it's a perfect addition to any home or office space.",
   image: "images/products/succulent-plant-set.jpg",
   rating: {
-      stars: 4.6,
+      stars: 1.0,
       count: 900
   },
+  pricePennies : 600,
   keywords: [
       "Succulent Plant",
       "Home Decor",
@@ -199,9 +212,10 @@ export const products = [
   description: "Stay connected and track your fitness goals with this smartwatch. With features like heart rate monitoring and notifications, it's your perfect everyday companion.",
   image: "images/products/smartwatch.jpg",
   rating: {
-      stars: 4.7,
+      stars: 3.5,
       count: 1100
   },
+  pricePennies : 6000,
   keywords: [
       "Smartwatch",
       "Fitness Tracker",
@@ -214,9 +228,10 @@ export const products = [
   description: "Gather your friends and family for a fun game night with this board game set. Featuring a variety of classic games, it's sure to provide hours of entertainment.",
   image: "images/products/board-game-set.jpg",
   rating: {
-      stars: 4.4,
+      stars: 2.5,
       count: 850
   },
+  pricePennies : 1400,
   keywords: [
       "Board Game",
       "Family Fun",
@@ -232,6 +247,7 @@ export const products = [
       stars: 4.5,
       count: 1050
   },
+  pricePennies : 800,
   keywords: [
       "Water Bottle",
       "Reusable",
@@ -244,9 +260,10 @@ export const products = [
   description: "Experience wireless freedom with these Bluetooth earbuds. Featuring crystal-clear sound and long battery life, they're perfect for workouts, commutes, and more.",
   image: "images/products/wireless-earbuds.jpg",
   rating: {
-      stars: 4.3,
+      stars: 4.0,
       count: 980
   },
+  pricePennies : 1700,
   keywords: [
       "Wireless Earbuds",
       "Bluetooth",
@@ -259,9 +276,10 @@ export const products = [
   description: "Illuminate your workspace with this LED desk lamp. With adjustable brightness and color temperature settings, it provides the perfect lighting for any task.",
   image: "images/products/led-desk-lamp.jpg",
   rating: {
-      stars: 4.6,
+      stars: 5.0,
       count: 950
   },
+  pricePennies : 3300,
   keywords: [
       "LED Desk Lamp",
       "Desk Accessories",
@@ -274,9 +292,10 @@ export const products = [
   description: "Discover the joy of cooking with this comprehensive cookbook. Packed with recipes for every occasion, it's a must-have for any aspiring chef.",
   image: "images/products/cookbook-joy-of-cooking.jpg",
   rating: {
-      stars: 4.7,
+      stars: 5.0,
       count: 1250
   },
+  pricePennies : 500,
   keywords: [
       "Cookbook",
       "Recipes",
@@ -289,9 +308,10 @@ export const products = [
   description: "Stay organized and stylish on the go with this laptop backpack. With padded compartments for your tech essentials and plenty of storage space, it's perfect for work or travel.",
   image: "images/products/laptop-backpack.jpg",
   rating: {
-      stars: 4.4,
+      stars: 4.0,
       count: 980
   },
+  pricePennies : 2200,
   keywords: [
       "Laptop Backpack",
       "Travel",
@@ -307,6 +327,7 @@ export const products = [
       stars: 4.5,
       count: 1150
   },
+  pricePennies : 3100,
   keywords: [
       "Wireless Speaker",
       "Bluetooth",
@@ -319,9 +340,10 @@ export const products = [
   description: "Enhance your yoga practice with this durable and eco-friendly yoga mat. With a non-slip surface and comfortable cushioning, it's perfect for beginners and experienced yogis alike.",
   image: "images/products/yoga-mat.jpg",
   rating: {
-      stars: 4.6,
+      stars: 4.5,
       count: 1050
   },
+  pricePennies : 900,
   keywords: [
       "Yoga Mat",
       "Fitness",
@@ -334,9 +356,10 @@ export const products = [
   description: "Stay cozy and warm with this cotton throw blanket. Perfect for snuggling up on the couch or adding a touch of comfort to your bedroom decor.",
   image: "images/products/cotton-throw-blanket.jpg",
   rating: {
-      stars: 4.4,
+      stars: 3.5,
       count: 990
   },
+  pricePennies : 1000,
   keywords: [
       "Throw Blanket",
       "Home Decor",
@@ -349,9 +372,10 @@ export const products = [
   description: "Enjoy wireless freedom with these Bluetooth headphones. With premium sound quality and comfortable design, they're perfect for music lovers on the go.",
   image: "images/products/bluetooth-headphones.jpg",
   rating: {
-      stars: 4.7,
+      stars: 4.5,
       count: 1250
   },
+  pricePennies : 1250,
   keywords: [
       "Bluetooth Headphones",
       "Wireless",
@@ -367,6 +391,7 @@ export const products = [
       stars: 4.5,
       count: 1150
   },
+  pricePennies : 400,
   keywords: [
       "Leather Journal",
       "Writing",
@@ -379,9 +404,10 @@ export const products = [
   description: "Start your day right with this coffee maker. With programmable features and brew strength options, it ensures you get your perfect cup of coffee every time.",
   image: "images/products/coffee-maker.jpg",
   rating: {
-      stars: 4.6,
+      stars: 5.0,
       count: 1100
   },
+  pricePennies : 19000,
   keywords: [
       "Coffee Maker",
       "Kitchen Appliance",
@@ -394,28 +420,14 @@ export const products = [
   description: "Capture memories instantly with this Polaroid camera. With its retro design and instant prints, it's perfect for parties, weddings, and everyday adventures.",
   image: "images/products/polaroid-camera.jpg",
   rating: {
-      stars: 4.7,
+      stars: 4.0,
       count: 1200
   },
+  pricePennies : 6000,
   keywords: [
       "Polaroid Camera",
       "Instant Photography",
       "Memories"
-  ]
-},
-{
-  id: "v1c0987d-836d-4d0c-944b-5c6a1835ebc1",
-  name: "Virtual Reality Headset",
-  description: "Immerse yourself in virtual worlds with this virtual reality headset. Featuring high-resolution displays and ergonomic design, it's perfect for gaming, movies, and more.",
-  image: "images/products/virtual-reality-headset.jpg",
-  rating: {
-      stars: 4.8,
-      count: 850
-  },
-  keywords: [
-      "Virtual Reality",
-      "Headset",
-      "Gaming"
   ]
 },
 {
@@ -427,6 +439,7 @@ export const products = [
       stars: 4.5,
       count: 950
   },
+  pricePennies : 2800,
   keywords: [
       "Wooden Picture Frame",
       "Home Decor",
@@ -439,14 +452,30 @@ export const products = [
   description: "Enhance your gaming experience with this high-performance gaming keyboard. Featuring customizable RGB lighting and responsive keys, it gives you the competitive edge.",
   image: "images/products/gaming-keyboard.jpg",
   rating: {
-      stars: 4.7,
+      stars: 5.0,
       count: 920
   },
+  pricePennies : 20000,
   keywords: [
       "Gaming Keyboard",
       "Gaming Accessories",
       "RGB Lighting"
   ]
+},  
+{   id: "c8d5f4a3-6b2e-1a9k-7j6h-5g4f3e2d1c0",
+    name: "Classic Leather Watch",
+    description: "Make a statement with this classic leather watch. Crafted with precision and style, it's a timeless accessory for any occasion.",
+    image: "images/products/classic-leather-watch.jpg",
+    rating: {
+        stars: 4.5,
+        count: 890
+    },
+    pricePennies : 3500,
+    keywords: [
+        "Leather Watch",
+        "Classic",
+        "Accessories"
+    ]
 }
 ];
 
