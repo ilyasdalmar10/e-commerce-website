@@ -133,22 +133,27 @@
   margin-right: 5px;
   cursor: pointer;
 }
+.basket-num {
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-47px,-14px);
+}
+.basket-num a{
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(206, 8, 8);
+}
+
+.home-header-right-section-basket label a{
+  text-decoration: none;
+  color: #000204;
+}
 .home-header-right-section-login img{
   transform: translateX(-10px);
   
 }
-.basket-num{
-  font-size: 19px;
-  font-weight: 600;
-  color: rgb(206, 8, 8);
-  cursor: pointer;
-  position: absolute;
-  transform: translate(-38px,-12px);
-}
-
 
 /* The styles of the footer */
-
 .footer-container{
   font-family: Raleway;
   position: relative;

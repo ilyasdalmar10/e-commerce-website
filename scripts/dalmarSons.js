@@ -1,6 +1,6 @@
+import { basket, addToBasket } from '../data/basket.js';
 import{products} from '../data/products.js';
 import{formatMoney} from '../scripts/assets/money.js';
-
 
 let productsHtml = '';
 
@@ -45,14 +45,14 @@ products.forEach((product) =>{
 
              <div class="product-spacer"></div>
 
-                <div class="added-to-cart">
+                <div class="added-to-basket">
                      <img src="images/icons/basket-icon.PNG">
                             Added
                 </div>
 
-             <button class="add-to-cart-button button-primary      js-add-to-cart"
+             <button class="add-to-basket-button button-primary      js-add-to-basket"
                 data-product-id="${product.id}">
-                     Add to Cart
+                     Add to Basket
             </button>
          </div>
     `
@@ -60,3 +60,27 @@ products.forEach((product) =>{
 
 document.querySelector('.js-products-grid').innerHTML = productsHtml;
 
+function updateBasketQuantity(){
+    let basketQuantity = 0;
+      
+    basket.forEach((basketItem) =>{
+        basketQuantity += basketItem.quantity;
+    });
+    document.querySelector('.js-basket-num-container').innerHTML = basketQuantity;
+    localStorage.setItem('basketQuantity', JSON.stringify(basketQuantity));
+};
+
+
+
+
+document.querySelectorAll('.js-add-to-basket')
+    .forEach((button) =>{
+         button.addEventListener('click', () =>{
+             const productId = button.dataset.productId;
+             addToBasket(productId);
+             updateBasketQuantity();
+    
+        });
+    });
+
+console.log(basket);
