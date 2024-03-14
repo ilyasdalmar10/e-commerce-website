@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/shared/ap-header-footer.css">
   <link rel="stylesheet" href="styles/pages/dalmarSons.css">
   <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/pages/itemGenerate.css">
   
   <!--These are font links from google fonts-->  
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
         <label id="location-home">Deliver to your home</label>
       </div>
       <div class="home-header-left-section-customer-service">
-            <label>Customer Service</label>
+            <label><a class="js-customer-service">Customer Service</a></label>
       </div>
     </div>
 
@@ -43,7 +44,7 @@
             <button><img src="images/icons/search-icon.PNG" alt="searching button"></button>
           </div>
               
-          <div class="home-header-middle-section-categories"> 
+          <div class="home-header-middle-section-categories js-section-categories"> 
             <ul>
               <a><li>Men's Clothes</li></a>
               <li>Women's Clothes</li>
@@ -57,14 +58,13 @@
     </div>
     <div class="home-header-right-section">
             <div class="home-header-right-section-login">
-                <a><img src="images/icons/sign-in-icon.PNG" alt="sign in"></a><a><label id="sign-in">Sign in</label></a> 
+                <a><img src="images/icons/sign-in-icon.PNG" alt="sign in"></a><a href="signIn.html"><label id="sign-in">Sign in</label></a> 
             </div>          
             <div class="home-header-right-section-basket">
                 <div class="basket-num"><a href="checkout.html"><div class="js-basket-num-container"></div></div><img src="images/icons/basket-icon.PNG"></a><label id="view-cart"><a href="checkout.html">View Basket</a></label>
             </div>
     </div>  
   </header>   
-
   <div class="main">
     <div class="products-grid js-products-grid" >
     </div>

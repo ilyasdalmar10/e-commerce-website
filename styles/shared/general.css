@@ -7,3 +7,10 @@ body{
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.customer-service-message,
+.customer-service-message a{
+  font-size: 48px;
+  text-align: center;
+  color: #0a4220;
+  text-decoration: none;
+}

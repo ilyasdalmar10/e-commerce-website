@@ -1,6 +1,9 @@
 import { basket, addToBasket } from '../data/basket.js';
 import{products} from '../data/products.js';
 import{formatMoney} from '../scripts/assets/money.js';
+import { customerService } from './assets/general.js';
+
+
 
 let productsHtml = '';
 
@@ -8,12 +11,14 @@ products.forEach((product) =>{
     productsHtml += `
         <div class="product-container">
             <div class="product-image-container">
-                    <img class="product-image"
-                        src="${product.image}">
+                    <a class="js-item-click" data-product-id="${product.id}" href="#"><img class="product-image"
+                        src="${product.image}"></a>
                 </div>
-
+            
              <div class="product-name limit-text-to-2-lines">
-                    ${product.name}
+                <a class="js-item-click" data-product-id="${product.id}" href="#">  
+                ${product.name}
+                </a>
               </div>
 
              <div class="product-rating-container">
@@ -54,6 +59,9 @@ products.forEach((product) =>{
                 data-product-id="${product.id}">
                      Add to Basket
             </button>
+            <button class="buy-now-button js-buy-now" data-product-id="${product.id}"> 
+                    Buy now
+            </button>
          </div>
     `
 });
@@ -64,13 +72,15 @@ function updateBasketQuantity(){
     let basketQuantity = 0;
       
     basket.forEach((basketItem) =>{
-        basketQuantity += basketItem.quantity;
+        basketQuantity += basketItem.quantity; 
+        
     });
-    document.querySelector('.js-basket-num-container').innerHTML = basketQuantity;
     localStorage.setItem('basketQuantity', JSON.stringify(basketQuantity));
+    const retrieveQuantity = JSON.parse(localStorage.getItem('basketQuantity')); 
+    document.querySelector('.js-basket-num-container').innerHTML = retrieveQuantity;
+   return retrieveQuantity;
 };
-
-
+updateBasketQuantity();
 
 
 document.querySelectorAll('.js-add-to-basket')
@@ -82,5 +92,67 @@ document.querySelectorAll('.js-add-to-basket')
     
         });
     });
+    let newHtml = '';
+    
+   function displayItem(product){
+  
+    newHtml = `
+      <div class="overrall-container">
+      <div class="product-details">
+          <div class="name-container">
+            ${product.name}
+          </div>
+          <div class="image-product-container">
+            <img src="${product.image}" class="
+            image-product">
+          </div>
+          
+      </div>
+      <div class="description-product"> 
+        <div class="price-container"><h2>£${formatMoney(product.pricePennies)}</h2></div>
+        <div><p>${product.description}</p><div>
+        <div class="rating-product-container">
+            <img class="rating-product" src="images/icons/ratings/rating-${product.rating.stars * 10}.png">
+            <div class="rating-count-product">
+                ${product.rating.count}
+            </div>
+          </div>
+      
+      </div>
+      <div class="comment-container">
+        <div class="comment-title">Comments:</div>
+        <div class="comment-inner">
+          <textarea id="subject-comment" placeholder="Submit your review...." data-product-id="${product.id}"></textarea>
+          
+          <button class="js-comment-submit" data-product-id="${product.id}">Submit</button>
+        </div>
+      </div>
+      <div class="container-comments-submitted">
+        
+      </div>
 
-console.log(basket);
+      </div>
+      
+    `;
+    return newHtml;
+
+  } 
+    
+    document.querySelectorAll('.js-item-click').forEach(link =>{
+      
+      link.addEventListener('click', ()=>{
+          const productId = link.dataset.productId;
+          
+          const specificProduct = products.find(obj => obj.id === productId);
+          
+          displayItem(specificProduct);
+          document.querySelector('.main').innerHTML = newHtml;
+          
+         
+      })
+    });
+      
+
+    customerService();
+    
+    

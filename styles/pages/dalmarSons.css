@@ -79,7 +79,7 @@
   flex-direction: column;
 }
 
-.product-image-container {
+.product-image-container a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +100,10 @@
 .product-name {
   height: 40px;
   margin-bottom: 5px;
+}
+.product-name a{
+  text-decoration-line: none;
+  color: black;
 }
 
 .product-rating-container {
@@ -158,4 +162,13 @@
   box-shadow:  0.5px solid rgb(34, 34, 34);
   
   cursor: pointer;
+}
+.buy-now-button{
+  width: 100%;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0.5px solid rgb(34, 34, 34);
+  background-color: rgb(57, 109, 221);
+  margin-top: 3px;
+  color: rgb(250, 252, 253);
 }

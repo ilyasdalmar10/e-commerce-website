@@ -4,10 +4,12 @@ if(!basket) {
   basket = [{
     productId : 'v2c1987d-936d-4d0c-944b-5c6a1835ebc2',
     quantity: 2,
+    deliveryId : '1'
   },
   {
     productId : 't2y3u4i5o6p7l8k9j0h1g2f3d4s5a6q7w8e9r0t',
-    quantity: 1
+    quantity: 1,
+    deliveryId : '2'
 
   }];
 }
@@ -33,7 +35,8 @@ export function addToBasket(productId){
   }else{
     basket.push({
       productId : productId,
-      quantity : 1
+      quantity : 1,
+      deliveryId : '1'
     });
   }
   saveToStorage();
@@ -51,7 +54,19 @@ export function removeFromBasket(productId){
   });
 
   basket = newBasket; 
-   
+
   saveToStorage();
 
+}
+
+export function updatedeliveryChoice(productId,deliveryId){
+  let sameItem;
+  basket.forEach((basketItem) =>{
+    if(productId === basketItem.productId){
+      sameItem = basketItem;
+    }
+  });
+  sameItem.deliveryId = deliveryId;
+
+  saveToStorage();
 }

@@ -106,7 +106,7 @@
   cursor: pointer;  
 }
 .home-header-middle-section-categories li:hover{
-  color: #0a4220;;
+  color: #0a4220;
 }
 
 
@@ -148,11 +148,14 @@
   text-decoration: none;
   color: #000204;
 }
-.home-header-right-section-login img{
-  transform: translateX(-10px);
+.home-header-right-section-login img {
+  transform: translateX(-20px);
   
 }
-
+.home-header-right-section-login a{
+  text-decoration: none;
+  color: black;
+}
 /* The styles of the footer */
 .footer-container{
   font-family: Raleway;

@@ -1,6 +1,8 @@
 import {basket,removeFromBasket} from '../data/basket.js';
 import {products} from '../data/products.js';
 import {formatMoney} from './assets/money.js';
+import { customerService } from './assets/general.js';
+import { viewTotal } from './basketWorkout.js';
 //Generating the html
 
 let basketHtml = '';
@@ -97,6 +99,8 @@ basket.forEach((basketItem) => {
 `;
 });
 
+
+
 document.querySelector('.js-order-summary-page').innerHTML = basketHtml;
 
 document.querySelectorAll('.js-delete-link').forEach(link =>{
@@ -114,3 +118,6 @@ document.querySelectorAll('.js-delete-link').forEach(link =>{
 
 });
 
+customerService();
+
+viewTotal();

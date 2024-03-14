@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/shared/ap-header-footer.css">
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/pages/signIn.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Sign in</title>
+</head>
+<body>
+  <header class="home-page-header-container"> 
+    <!--The different sections of the header element.--> 
+   
+          <!--The containers for the image of the logo and the search bar and the caetgories.-->
+          <div class="home-header-middle-section-logo">
+            <a href="dalmarSons.html"><img src="images/logo.PNG" alt="big logo"></a>
+          </div>            
+        
+            <div class="home-header-right-section-login">
+                <a><img src="images/icons/sign-in-icon.PNG" alt="sign in"></a><a><label id="sign-in">Log out</label></a> 
+            </div>            
+  </header>  
+
+  <div class="sign-in-form">
+    <div id="form" action="">
+      <h1>Sign in to account</h1>
+      <div class="input-control">
+        <label for="fname">User Name</label>
+        <input id="Username" name="fname" type="text" class="js-user-name">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="Password">Password</label>
+        <input id="Password" name="Password" type="text" class="js-pass-word">
+    </div>
+    <button class="js-submit">Sign In</button>
+    <a href="#"class="creating-link js-create-account">Create account</a>
+
+      
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+
+</body>
+
+<script type="module" src="scripts/singIn.js"></script>
+
+</html>
