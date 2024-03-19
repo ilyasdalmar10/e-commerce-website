@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+
+    
+    <link rel="stylesheet" href="styles/shared/ap-header-footer.css">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/order.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+   <body>
+    <header class="home-page-header-container"> 
+        <!--The different sections of the header element.-->
+        <div class="home-header-left-section">
+          <div class="home-header-left-section-location">
+            
+          </div>
+          <div class="home-header-left-section-customer-service">
+              <label><a class="js-customer-service">Customer Service</a></label>
+          </div>
+        </div>
+    
+        <div class="home-header-middle-section">
+              <!--The containers for the image of the logo and the search bar and the caetgories.-->
+              <div class="home-header-middle-section-logo">
+                <a href="dalmarSons.html"><img src="images/logo.PNG" alt="big logo"></a>
+               
+                </div> 
+                <div class="home-header-right-section-login">
+                    <a><img src="images/icons/sign-in-icon.PNG" alt="sign in"></a><a><label id="sign-in">Sign in</label></a> 
+                </div>     
+        </div>
+      </header>  
+
+      
+       <div class="order-container">
+            <div class="row-one">
+                <h1>Enter Your Details:</h1>
+            </div>
+
+            <div class="row-two">
+                <div>
+                <label for="firstName">First Name :</label>
+                <input id="Name" name="name" type="text">
+                </div>
+                <div>
+                <label for="firstName">Last Name :</label>
+                <input id="Name" name="name" type="text">
+                </div>
+            </div>
+            
+            <div class="row-three">
+                <div>
+                    <label for="cardNumber">Card Number :</label>
+                    <input id="cardNumber"type="text">
+                </div>
+                <div>
+                    <label for="svc">SVC :</label>
+                    <input id="svc" type="text">
+                </div>
+
+            </div>
+
+
+
+            <div class="row-four">
+                <label id="Expiery">Expiery Date: </label>
+                <div>
+                    <label>Month:</label>
+                    <select name="month">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Year: </label>
+                    <input id="year" type="text">
+                </div>
+            </div>
+
+            <div class="row-five">
+                    <h1>Shipping Address:</h1>
+            </div>         
+            <div class="row-six">
+                <div>
+                    <label>Email: </label>
+                    <input id="email" type="text" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label>Address:</label>
+                    <input placeholder="Enter Address" id="address">
+                    
+                </div>
+            </div>
+            <div class="row-seven">
+                <button class="confirming">Confirm Details</button>
+            </div>
+        </div>
+
+
+    </body>
+
+<script type="module" src="scripts/order.js"></script>
+
+
+</html>

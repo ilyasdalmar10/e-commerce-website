@@ -118,6 +118,24 @@ document.querySelectorAll('.js-delete-link').forEach(link =>{
 
 });
 
+document.querySelector('.js-place-order').addEventListener('click', ()=>{
+
+  
+
+})
+
+
+
 customerService();
 
 viewTotal();
+
+export let inBasket = false;
+document.querySelector('.js-place-order').addEventListener('click', ()=>{
+      
+      for(let i=0; i<basket.length- 1; i++){
+          
+      }
+      window.location.href = "orderPage.html";
+    
+});
