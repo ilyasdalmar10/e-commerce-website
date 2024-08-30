@@ -73,12 +73,15 @@ updateBasketQuantity();
 document.querySelectorAll('.js-add-to-basket')
     .forEach((button) =>{
          button.addEventListener('click', () =>{
+            
              const productId = button.dataset.productId;
              addToBasket(productId);
              updateBasketQuantity();
     
         });
     });
+  
+  
     let newHtml = '';
     
    function displayItem(product){

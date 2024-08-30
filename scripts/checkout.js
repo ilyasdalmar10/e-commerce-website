@@ -22,7 +22,7 @@ basket.forEach((basketItem) => {
   <div class="cart-item-container 
   js-basket-item-container-${sameProduct.id}">
     <div class="delivery-date">
-      Delivery date: Tuesday, June 21
+      Delivery date: Tommorow
     </div>
 
     <div class="cart-item-details-grid">
@@ -51,7 +51,7 @@ basket.forEach((basketItem) => {
 
       <div class="delivery-options">
         <div class="delivery-options-title">
-          Choose a delivery option:
+          Delivery Date: 
         </div>
         <div class="delivery-option">
           <input type="radio" checked
@@ -59,36 +59,10 @@ basket.forEach((basketItem) => {
             name="delivery-option-${sameProduct.id}">
           <div>
             <div class="delivery-option-date">
-              Tuesday, June 21
+                3 Days
             </div>
             <div class="delivery-option-price">
               FREE Shipping
-            </div>
-          </div>
-        </div>
-        <div class="delivery-option">
-          <input type="radio"
-            class="delivery-option-input"
-            name="delivery-option-${sameProduct.id}">
-          <div>
-            <div class="delivery-option-date">
-              Wednesday, June 15
-            </div>
-            <div class="delivery-option-price">
-              £4.99 - Shipping
-            </div>
-          </div>
-        </div>
-        <div class="delivery-option">
-          <input type="radio"
-            class="delivery-option-input"
-            name="delivery-option-${sameProduct.id}">
-          <div>
-            <div class="delivery-option-date">
-              Monday, June 13
-            </div>
-            <div class="delivery-option-price">
-              £9.99 - Shipping
             </div>
           </div>
         </div>

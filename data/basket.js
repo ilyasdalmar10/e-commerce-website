@@ -1,20 +1,21 @@
+
 export let basket = JSON.parse(localStorage.getItem('basket'));
 
 if(!basket) {
   basket = [{
     productId : 'v2c1987d-936d-4d0c-944b-5c6a1835ebc2',
     quantity: 2,
-    deliveryId : '1'
+    deliveryChoiceId : '1'
   },
   {
     productId : 't2y3u4i5o6p7l8k9j0h1g2f3d4s5a6q7w8e9r0t',
     quantity: 1,
-    deliveryId : '2'
+    deliveryChoiceId : '2'
 
   }];
 }
 
-function saveToStorage(){
+export function saveToStorage(){
   localStorage.setItem('basket', JSON.stringify(basket));
 }
 
@@ -36,7 +37,7 @@ export function addToBasket(productId){
     basket.push({
       productId : productId,
       quantity : 1,
-      deliveryId : '1'
+      deliveryChoiceId : '1'
     });
   }
   saveToStorage();
@@ -56,17 +57,18 @@ export function removeFromBasket(productId){
   basket = newBasket; 
 
   saveToStorage();
-
+  
 }
-
-export function updatedeliveryChoice(productId,deliveryId){
+/*
+export function updatedeliveryChoice(productId,deliveryChoiceId){
   let sameItem;
   basket.forEach((basketItem) =>{
     if(productId === basketItem.productId){
       sameItem = basketItem;
     }
   });
-  sameItem.deliveryId = deliveryId;
+  sameItem.deliveryChoiceId = deliveryChoiceId;
 
   saveToStorage();
 }
+*/

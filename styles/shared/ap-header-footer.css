@@ -156,6 +156,9 @@
   text-decoration: none;
   color: black;
 }
+.sign-in{
+  cursor: pointer;
+}
 /* The styles of the footer */
 .footer-container{
   font-family: Raleway;

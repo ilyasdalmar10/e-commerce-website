@@ -18,7 +18,7 @@ userPData.addEventListener('input', function(){
 let correctUserName;
 
 document.querySelector('.js-submit').addEventListener('click', ()=>{
-    
+    console.log(usersData);
     getUserData(userNData.value,userPData.value);
     console.log(correctUserName);
     
@@ -96,20 +96,13 @@ function addToDataUser(username,password){
         }
     });
 }
-
-    
-
-    
-
-
 document.querySelector('.js-create-account').addEventListener('click', ()=>{
     document.querySelector('.sign-in-container').innerHTML = newSignInHtml;
     
     document.querySelector('.js-create').addEventListener('click', ()=>{
         let NewUsername = document.getElementById('NewUserName');
         let NewPassword = document.getElementById('NewPassword');
-        
-        
+                
             NewUsername.addEventListener('input', function(){
                 NewUsername.value = this.value;
             });
@@ -118,10 +111,8 @@ document.querySelector('.js-create-account').addEventListener('click', ()=>{
             });
 
             addToDataUser(NewUsername.value,NewPassword.value);
-        
-    });
-   
-});
+        });
+   });
 
 
 

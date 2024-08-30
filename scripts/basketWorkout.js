@@ -3,7 +3,7 @@ import { products } from "../data/products.js";
 import {formatMoney} from "./assets/money.js";
 
 export function viewTotal(){
-    let totalItemPrice = 0;
+    let totalItemPrice =  0;
     
     basket.forEach(basketItem => {
         const productId = basketItem.productId;
@@ -17,5 +17,7 @@ export function viewTotal(){
         
     });
     console.log(formatMoney(totalItemPrice));
-    document.querySelector('.payment-summary-money').innerHTML = formatMoney(totalItemPrice);
+    
+    document.querySelector('.js-payment-summary-money').innerHTML = `£${formatMoney(totalItemPrice)}`;
+    document.querySelector('.js-total-payment').innerHTML = `£${formatMoney(totalItemPrice)}`;
 }

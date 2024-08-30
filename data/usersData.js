@@ -2,15 +2,16 @@ export let usersData = JSON.parse(localStorage.getItem('usersData'));
 
 if(!usersData){
     usersData = [{
-        userName : "haha",
-        password : "123",
+        userName : "iloveComputer",
+        password : "fantastic123",
         
     },{
-        userName : "WhiteChocolateMan",
-        password : "Chocko_!2",
+        userName : "WhiteChocolate",
+        password : "Chocoloate456",
     }];
 }
 function saveToDatabase(){
     localStorage.setItem('usersData', JSON.stringify(usersData));
 }
+saveToDatabase();
 
