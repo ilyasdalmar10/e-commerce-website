@@ -106,7 +106,7 @@ viewTotal();
 
 export let inBasket = false;
 document.querySelector('.js-place-order').addEventListener('click', ()=>{
-      
+      // I dont know what thats for
       for(let i=0; i<basket.length- 1; i++){
           
       }
